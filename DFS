@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<conio.h>
 void dfs(int);
 int g[10][10],visited[10],n,vertex[10];
 void main() {
