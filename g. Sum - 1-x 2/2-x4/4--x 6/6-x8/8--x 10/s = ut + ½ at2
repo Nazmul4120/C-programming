@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+ float u,t,s,a;
+ clrscr();
+ printf("\nEnter the initial speed: ");
+ scanf("%f",&u);
+ printf("\nEnter the time taken: ");
+ scanf("%f",&t);
+ printf("\nEnter the acceleration: ");
+ scanf("%f",&a);
+ s = (u*t) + (0.5)*a*pow(t,2);
+ printf("\nResult = %.2f",s);
+ getch();
+}
