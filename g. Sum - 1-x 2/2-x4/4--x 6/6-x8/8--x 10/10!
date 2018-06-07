@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+ int x,i=0,n=0;
+ float sum=0;
+ long fact(int);
+ clrscr();
+ printf("\nEnter the value of 'x': ");
+ scanf("%d",&x);
+ while(i<=10)
+ {
+ sum = sum+(pow(-1,n)*pow(x,i)/fact(i));
+ i=i+2;
+ n++;
+ }
+ printf("\nSUM = %ld",sum);
+ getch();
+}
+long fact(int a)
+{
+ long f=1;
+ while(a!=0){
+ f = f*a;
+ a--;
+ }
+ return f;
+}
