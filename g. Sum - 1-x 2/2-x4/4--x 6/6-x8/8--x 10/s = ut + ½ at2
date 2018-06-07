@@ -3,7 +3,6 @@
 void main()
 {
  float u,t,s,a;
- clrscr();
  printf("\nEnter the initial speed: ");
  scanf("%f",&u);
  printf("\nEnter the time taken: ");
