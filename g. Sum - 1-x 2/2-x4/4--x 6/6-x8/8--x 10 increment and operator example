@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5,c,d;
+    c=a++;
+    d=++b;
+    printf("post increment result:%d\n",c);
+    printf("Pre increment result:%d\n",d);
+    c=a-- + --b;
+    printf("Finally C=%d",c);
+    return 0;
+
+
+}
