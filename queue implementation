@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+    int Q[size],front=-1,rear=-1,op,element;
+    void enQueue(int);
+    void deQueue();
+    void display();
+    printf("select your option");
+    printf("1:insert\n ,2:Deletion\n,3:Display\n");
+    scanf("%d"&op);
+    switch(op):
+        {
+            case 1:printf("Enter element to be insert");
+            scanf("%d",&element);
+            enQueue(element);
+            break;
+            case 2:deQueue();
+            break;
+            case 3:
+                display();
+                break;
+        }
+}
+
+        }
+    return 0;
+}
