@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+ float a,b,c, root1,root2,temp, real, imag;
+ printf("Enter any a, b and c values: ");
+ scanf("%f%f%f",&a,&b,&c);
+ temp = (b*b) - (4*a*c);
+ if(temp>0)
+ {
+ printf("\nRoots are real:\n");
+ root1 = (-b + sqrt(temp))/(2*a);
+ root2 = (-b - sqrt(temp))/(2*a);
+ printf("\nRoot1 = %.2f",root1);
+ printf("\nRoot2 = %.2f",root2);
+ }
+ else{
+ if(temp == 0)
+ {
+printf("\nRoots are real:\n");
+root1 = root2 = -b/(2*a);
+printf("\nRoot1 = %.2f",root1);
+printf("\nRoot2 = %.2f",root2);
+ }
+ else
+ {
+real = -b / (2*a);
+imag = sqrt(-temp) / (2*a);
+printf("\nRoots are imaginary:\n");
+printf("Root1 = %.2f + %.2fi",real,imag);
+printf("\nRoot2 = %.2f - %.2fi",real,imag);
+ }
+ }
+ 
+}
