@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float cm,mts;
+    printf("Enter a distance into Centimeters: ");
+    scanf("%f",&cm);
+    mts=cm/100;
+    printf("given distance in miter:%.2f mts",mts);
+    return 0;
+}
